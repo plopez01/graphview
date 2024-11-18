@@ -1,6 +1,6 @@
 final int N_PRODUCTS = 5;
 final float FIELD_CONSTANT = 0.005;
-final float FIELD_FRICTION = 0.1;
+final float FIELD_FRICTION = 0.3;
 
 SimilarityProfile profile = new SimilarityProfile();
 Visualizer v;
@@ -22,9 +22,9 @@ void draw() {
   v.draw();
 
   // Draw solution, improve
-  for (int i = 0; i < N_PRODUCTS-1; i++) {
-    Node n1 = v.nodeMap.get(solution.get(i));
-    Node n2 = v.nodeMap.get(solution.get(i+1));
+  for (int i = 0; i < N_PRODUCTS; i++) {
+    Node n1 = v.nodeMap.get(solution.get(i % N_PRODUCTS));
+    Node n2 = v.nodeMap.get(solution.get((i+1) % N_PRODUCTS));
 
     stroke(255, 0, 0);
     line(n1.pos.x, n1.pos.y, n2.pos.x, n2.pos.y);
