@@ -56,7 +56,7 @@ class Visualizer {
 
 
         node2.acel.add(PVector.mult(dir, acelMagnitude));
-        node1.acel.add(PVector.mult(dir, -acelMagnitude));
+        //node1.acel.add(PVector.mult(dir, -acelMagnitude));
 
 
 

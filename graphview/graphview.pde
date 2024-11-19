@@ -1,5 +1,5 @@
 final int N_PRODUCTS = 5;
-final float FIELD_CONSTANT = 0.005;
+final float FIELD_CONSTANT = 0.01;
 final float FIELD_FRICTION = 0.3;
 
 SimilarityProfile profile = new SimilarityProfile();
